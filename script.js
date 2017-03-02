@@ -17,7 +17,7 @@ $(document).ready(function(){
         var logo =res.stream.channel.logo;
         var name= res.stream.channel.display_name;
         var status = res.stream.channel.status;
-        $("#followerInfo").prepend("<div class='row line'>"+ '<div class="col-md-4 text-center center-block">'+ "<img class='img-responsive' src=" + logo+ ">"+ "</div>" + '<div class="col-md-4 sta text-center">'+ name + '</div>' +'<div class="col-md-4 sta text-center">' + status +'</div> </div>');
+        $("#followerInfo").prepend("<div class='row line'>"+ '<div class="col-md-4 text-center center-block">'+ "<img class='img-responsive' src=" + logo+ ">"+ "</div>" + '<div class="col-md-4 sta text-center"><a target="blank" href='+ res.stream.channel.url+ ">" + name + '</a></div>' +'<div class="col-md-4 sta text-center">' + status +'</div> </div>');
       };
 
       if(res.stream===null){
@@ -29,10 +29,18 @@ $(document).ready(function(){
           }
           else{
             var logo2= rest.logo;
-            $("#followerInfo").prepend("<div class='row line'>"+ '<div class="col-md-4 text-center">'+ "<img class='img-responsive' src=" + logo2+ ">"+ "</div>" + '<div class="col-md-4 sta text-center">'+ name + '</div>' +'<div class="col-md-4 sta text-center">OFFLINE</div> </div>');
+            $("#followerInfo").prepend("<div class='row line'>"+ '<div class="col-md-4 text-center">'+ "<img class='img-responsive' src=" + logo2+ ">"+ "</div>" + '<div class="col-md-4 sta text-center"><a target="blank" href='+ rest.url+ ">"+name + '</div>' +'<div class="col-md-4 sta text-center">OFFLINE</div> </div>');
           };
         });
       };
     });
-  };  
+  };
+
+
+
+
+
+
+
+
 });
