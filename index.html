@@ -1,71 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Twitchtv API</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheet.css">
-    <script src="jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Using Twitchtv API</h1>
-      <a class="status" href="https://www.twitch.tv/freecodecamp" target="blank"></a>
+<head>
+  <meta charset="utf-8">
+  <title>Twitchtv API</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Using Twitchtv API</h1>
+    <h2 class="text-center"><a class="status" href="https://www.twitch.tv/freecodecamp" target="blank"></a></h2>
 
-  <table class="table">
-  <thead>
-    <tr>
-      <th></th>
-      <th>Name</th>
-      <th>Status</th>
-    </tr>
-    <tbody>
-    <tr>
-      <th scope="row" id="user1"></th>
-      <td>ESL_SC2</td>
-      <td></td>
-    </tr>
-      <tr>
-      <th scope="row" id="user2"></th>
-      <td>OgamingSC2</td>
-      <td></td>
-    </tr>
-      <tr>
-      <th scope="row" id="user3"></th>
-      <td>cretetion</td>
-      <td></td>
-    </tr>
-      <tr>
-      <th scope="row" is="user4"></th>
-      <td>freecodecamp</td>
-      <td></td>
-    </tr>
-      <tr>
-      <th scope="row" id="user5"></th>
-      <td>storbeck</td>
-      <td></td>
-    </tr>
-      <tr>
-      <th scope="row" id="user6"></th>
-      <td>habathcx</td>
-      <td></td>
-    </tr>
-      <tr>
-      <th scope="row" id="user7"></th>
-      <td>RobotCaleb</td>
-      <td></td>
-    </tr>
-      <tr>
-      <th scope="row" id="user8"></th>
-      <td>noobs2ninjas</td>
-      <td></td>
-    </tr>
-  </thead>
+    <h2>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          Logo
+        </div>
+        <div class="col-md-4 text-center" id="name">
+          Display Name
+        </div>
+        <div class="col-md-4 text-center">
+          Status
+        </div>
+      </div>
+    </h2>
 
-
-  </table>
+    <div id="followerInfo">
 
     </div>
-  </body>
+
+
+
+
+  </div>
+</body>
 </html>
