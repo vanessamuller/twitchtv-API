@@ -1,0 +1,34 @@
+body{
+  background-color:lightblue;
+}
+
+.line{
+  margin: 2rem;
+  border: 1px solid black;
+  padding: 1rem;
+  background-color:white;
+}
+
+img{
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.sta {
+  display: flex;
+  justify-content:center;
+
+  flex-direction:column;
+}
+
+h1{
+  padding: 1rem;
+}
+
+h2{
+  padding-top: 1rem;
+}
+
+.img-responsive{
+  margin: 0 auto;
+}
